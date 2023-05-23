@@ -19,7 +19,9 @@ public class Game implements Serializable {
     private String platforms;
     private Double score;
     private String imgUrl;
+    @Column(columnDefinition = "TEXT") // Indica ao JPA que o campo refere-se a um texto, aceitando assim maiores quantidades de palavras
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game() {}
