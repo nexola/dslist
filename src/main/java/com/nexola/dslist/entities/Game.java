@@ -2,12 +2,11 @@ package com.nexola.dslist.entities;
 
 import jakarta.persistence.*;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tb_game")
-public class Game implements Serializable {
+public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto incremento da chave primária
